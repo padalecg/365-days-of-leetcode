@@ -1,0 +1,17 @@
+import re
+class Solution(object):
+    def reverseWords(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        x = s.strip()
+        p = x.split(" ")
+        reversedList = []
+        for i in range(len(p)-1,-1,-1):
+            
+            reversedList.append(p[i])
+            #print(p[i])
+        string= " ".join([str(x) for x in reversedList])
+        res = re.sub(' +', ' ', string)
+        return res
