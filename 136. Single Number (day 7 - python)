@@ -1,0 +1,9 @@
+def singleNumber(self, nums):
+        """
+        used XOR
+        https://pythontutor.com/render.html#code=nums%20%3D%20%5B4,1,2,1,2%5D%0Aans%20%3D%200%0Afor%20x%20in%20nums%3A%0A%20%20%20%20ans%20%5E%3D%20x%0Aprint%28ans%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false
+        """
+        singledOut = 0
+        for current in nums:
+            singledOut ^= current
+        return singledOut
